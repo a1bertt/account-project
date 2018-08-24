@@ -32,18 +32,18 @@ public class AccountService
         return new JSONObject(accountMap);
     }
 
-//    public int numberOfAccounts(String firstName)
-//    {
-//        int instances = 0;
-//
-//        for(int i=1; i <= accountMap.size(); i++)
-//        {
-//            String fName =  accountMap.get(i).getFirstName();
-//            if(fName.equals(firstName))
-//            {
-//                instances++;
-//            }
-//        }
-//        return instances;
-//    }
+    public int numberOfAccounts(String firstName)
+    {
+        int instances = 0;
+
+        for(int i=1; i <= accountMap.size(); i++)
+        {
+            String fName =  accountMap.get(i).getFirstName();
+            if(fName.equals(firstName))
+            {
+                instances++;
+            }
+        }
+        return instances;
+    }
 }
