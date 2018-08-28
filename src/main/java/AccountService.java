@@ -1,3 +1,5 @@
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,5 +24,11 @@ public class AccountService
     public Account getAccountFromMap(Integer accountToGet)
     {
         return accountMap.get(accountToGet);
+    }
+
+    public JSONObject convertMapToJSON()
+    {
+
+        return new JSONObject(accountMap);
     }
 }

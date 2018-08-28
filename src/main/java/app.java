@@ -1,3 +1,5 @@
+import org.json.JSONObject;
+
 public class app {
 
     public static void main(String [ ] args)
@@ -8,6 +10,7 @@ public class app {
         acc.addAccountToMap("Michael", "Jordan", 1);
         acc.getAccountFromMap(1);
 
-        System.out.println(acc.getAccountFromMap(1).toString());
+        //System.out.println(acc.getAccountFromMap(1).toString());
+        System.out.println(acc.convertMapToJSON());
     }
 }
